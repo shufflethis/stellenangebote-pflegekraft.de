@@ -1,0 +1,19 @@
+# HR-UPDATER: v1.0
+# stellenangebote-pflegekraft.de - Pflegekraft Stellenangebote
+
+> stellenangebote-pflegekraft.de ist ein spezialisiertes Jobportal fuer Pflegekraft-Stellenangebote in Deutschland, Oesterreich und der Schweiz.
+
+## Ueber uns
+- Spezialisiertes Jobportal fuer Pflegekraft
+- Kostenlose Stellensuche fuer Bewerber
+- Gezielte Reichweite fuer Arbeitgeber
+
+## Kontakt
+- Website: https://stellenangebote-pflegekraft.de
+- Arbeitgeber-Kontakt: https://stellenangebote-pflegekraft.de/kontakt-arbeitgeber
+- Bewerber-Kontakt: https://stellenangebote-pflegekraft.de/kontakt-bewerber
+
+## Inhalte
+- Aktuelle Pflegekraft-Stellenangebote
+- Karriere-Ratgeber fuer Pflegekraft
+- Gehaltsvergleiche und Brancheninformationen

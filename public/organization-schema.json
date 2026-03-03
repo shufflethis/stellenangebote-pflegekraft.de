@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "stellenangebote-pflegekraft.de",
+  "url": "https://stellenangebote-pflegekraft.de",
+  "description": "Spezialisiertes Jobportal fuer Pflegekraft-Stellenangebote in Deutschland, Oesterreich und der Schweiz.",
+  "logo": "https://stellenangebote-pflegekraft.de/logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "availableLanguage": [
+      "German",
+      "English"
+    ]
+  },
+  "sameAs": []
+}
