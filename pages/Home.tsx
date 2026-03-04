@@ -11,37 +11,229 @@ import { Activity, Star, HeartPulse } from 'lucide-react';
 
 const MOCK_JOBS: Job[] = [
   {
-    id: 'nurs1',
-    title: 'Gesundheits- und Krankenpfleger (m/w/d)',
-    company: 'Zentralklinikum Nord-West',
+    id: '1',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'Alten- und Pflegeheim Schierholz GmbH',
+    location: 'Treia bei Schleswig',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2026-02-27'
+  },
+  {
+    id: '2',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'AAQUILA Personalservice GmbH',
+    location: 'Freyung, Niederbayern',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2026-02-26'
+  },
+  {
+    id: '3',
+    title: 'Pflegekraft (w/m/d)',
+    company: 'SAH Leipzig gGmbH',
+    location: 'Leipzig',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (w/m/d)',
+    postedAt: '2026-02-26'
+  },
+  {
+    id: '4',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'Johanniter-Unfall-Hilfe e.V. Landesverband Sachsen-Anhalt-Thüringen',
+    location: 'Bad Blankenburg',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2026-02-25'
+  },
+  {
+    id: '5',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'Johanniter-Unfall-Hilfe e.V. Landesverband Sachsen-Anhalt-Thüringen',
+    location: 'Königsee',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2026-02-25'
+  },
+  {
+    id: '6',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'Diakonisches Werk Schweinfurt e.V. Verwaltung',
+    location: 'Maßbach',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2026-02-24'
+  },
+  {
+    id: '7',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'Actief Personalmanagement GmbH Gera',
+    location: 'Triptis',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2026-02-24'
+  },
+  {
+    id: '8',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'AWO Soziale Dienste Vogtland gemeinnützige GmbH',
+    location: 'Plauen, Vogtland',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2026-02-20'
+  },
+  {
+    id: '9',
+    title: 'Pflegekraft (w/m/d)',
+    company: 'AWO Bezirksverband BB Süd e.V.',
+    location: 'Calau',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (w/m/d)',
+    postedAt: '2026-02-10'
+  },
+  {
+    id: '10',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'PERSO PLANKONTOR Nord GmbH',
+    location: 'Edewecht',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2026-02-06'
+  },
+  {
+    id: '11',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'Pflegestation Pollex GmbH Hauskrankenpflege',
+    location: 'Berlin',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2026-02-05'
+  },
+  {
+    id: '12',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'Diaverum Deutschland GmbH',
     location: 'Hamburg',
     type: 'Vollzeit',
-    salary: '3.900€ - 4.800€',
-    description: 'Einsatz auf der kardiologischen Station. Wir bieten ein hochmodernes Arbeitsumfeld, Mitgestaltung des Dienstplans und ein attraktives Fortbildungsprogramm.',
-    postedAt: 'Vor 1 Std.',
-    logo: 'https://picsum.photos/seed/clinic1/120/120'
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2026-02-03'
   },
   {
-    id: 'nurs2',
-    title: 'Fachkrankenpfleger für Intensivpflege',
-    company: 'St. Marien Hospital',
-    location: 'Köln',
+    id: '13',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'Diako Thüringen gem. GmbH',
+    location: 'Jena',
     type: 'Vollzeit',
-    salary: '4.500€ - 5.500€',
-    description: 'Verstärken Sie unser Intensiv-Team. Wir arbeiten im 3-Schicht-System mit festen Besetzungsschlüsseln und übertariflicher Zulage für Fachweiterbildung.',
-    postedAt: 'Vor 4 Std.',
-    logo: 'https://picsum.photos/seed/hosp2/120/120'
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2026-01-29'
   },
   {
-    id: 'nurs3',
-    title: 'Pflegekraft (m/w/d) für Dialyse',
-    company: 'Dialysezentrum Mitte',
-    location: 'Berlin',
-    type: 'Teilzeit',
-    salary: '2.800€ - 3.400€',
-    description: 'Betreuung unserer Patienten während der Dialyse. Geregelte Arbeitszeiten (keine Nachtdienste) und ein familiäres Team erwarten Sie.',
-    postedAt: 'Gestern',
-    logo: 'https://picsum.photos/seed/dialysis/120/120'
+    id: '14',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'Johanniter-Unfall-Hilfe e.V. Landesverband Sachsen-Anhalt-Thüringen',
+    location: 'Heldburg',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2026-01-28'
+  },
+  {
+    id: '15',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'Johanniter-Unfall-Hilfe e.V. Landesverband NRW Landesgeschäftsstelle',
+    location: 'Dortmund',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2025-12-19'
+  },
+  {
+    id: '16',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'AWO pflegeplus gGmbH',
+    location: 'Butzbach',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2025-12-17'
+  },
+  {
+    id: '17',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'LH Betreuungs- u. Pflege GmbH',
+    location: 'Kurort Oybin',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2025-11-27'
+  },
+  {
+    id: '18',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'Johanniter-Unfall-Hilfe e.V. Landesverband Sachsen-Anhalt-Thüringen',
+    location: 'Hildburghausen',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2025-11-26'
+  },
+  {
+    id: '19',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'DRK Kreisverband Parchim e.V.',
+    location: 'Lübz',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2025-11-20'
+  },
+  {
+    id: '20',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'Diako Thüringen gem. GmbH',
+    location: 'Kahla, Thüringen',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2025-11-17'
+  },
+  {
+    id: '21',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'K&S Dr. Krantz Sozialbau und Betreuung SE & Co. KG SR Marktredwitz',
+    location: 'Marktredwitz',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2025-10-02'
+  },
+  {
+    id: '22',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'Diako Thüringen gem. GmbH',
+    location: 'Bad Salzungen',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2025-08-28'
+  },
+  {
+    id: '23',
+    title: 'PFLEGEKRAFT (M/W/D)',
+    company: 'Evang. Diakonissenhaus Berlin Teltow Lehnin Stiftung bürgerlichen Rechts',
+    location: 'Teltow',
+    type: 'Vollzeit',
+    description: 'PFLEGEKRAFT (M/W/D)',
+    postedAt: '2025-07-15'
+  },
+  {
+    id: '24',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'RASANT Personal-Leasing GmbH',
+    location: 'Bremen',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2025-06-24'
+  },
+  {
+    id: '25',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'Augusta-Viktoria-Stift',
+    location: 'Erfurt',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2025-02-19'
   }
 ];
 
