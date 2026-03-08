@@ -12,6 +12,15 @@ import { Activity, Star, HeartPulse } from 'lucide-react';
 const MOCK_JOBS: Job[] = [
   {
     id: '1',
+    title: 'Pflegefachkraft (m/w/d)',
+    company: 'DRK-Region Hannover e.V.',
+    location: 'Hemmingen, Han',
+    type: 'Vollzeit',
+    description: 'Pflegefachkraft (m/w/d)',
+    postedAt: '2026-03-06'
+  },
+  {
+    id: '2',
     title: 'Pflegekraft (m/w/d)',
     company: 'Alten- und Pflegeheim Schierholz GmbH',
     location: 'Treia bei Schleswig',
@@ -20,7 +29,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-27'
   },
   {
-    id: '2',
+    id: '3',
     title: 'Pflegekraft (m/w/d)',
     company: 'AAQUILA Personalservice GmbH',
     location: 'Freyung, Niederbayern',
@@ -29,7 +38,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-26'
   },
   {
-    id: '3',
+    id: '4',
     title: 'Pflegekraft (w/m/d)',
     company: 'SAH Leipzig gGmbH',
     location: 'Leipzig',
@@ -38,7 +47,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-26'
   },
   {
-    id: '4',
+    id: '5',
     title: 'Pflegekraft (m/w/d)',
     company: 'Johanniter-Unfall-Hilfe e.V. Landesverband Sachsen-Anhalt-Thüringen',
     location: 'Bad Blankenburg',
@@ -47,7 +56,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-25'
   },
   {
-    id: '5',
+    id: '6',
     title: 'Pflegekraft (m/w/d)',
     company: 'Johanniter-Unfall-Hilfe e.V. Landesverband Sachsen-Anhalt-Thüringen',
     location: 'Königsee',
@@ -56,7 +65,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-25'
   },
   {
-    id: '6',
+    id: '7',
     title: 'Pflegekraft (m/w/d)',
     company: 'Diakonisches Werk Schweinfurt e.V. Verwaltung',
     location: 'Maßbach',
@@ -65,7 +74,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-24'
   },
   {
-    id: '7',
+    id: '8',
     title: 'Pflegekraft (m/w/d)',
     company: 'Actief Personalmanagement GmbH Gera',
     location: 'Triptis',
@@ -74,7 +83,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-24'
   },
   {
-    id: '8',
+    id: '9',
     title: 'Pflegekraft (m/w/d)',
     company: 'AWO Soziale Dienste Vogtland gemeinnützige GmbH',
     location: 'Plauen, Vogtland',
@@ -83,7 +92,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-20'
   },
   {
-    id: '9',
+    id: '10',
     title: 'Pflegekraft (w/m/d)',
     company: 'AWO Bezirksverband BB Süd e.V.',
     location: 'Calau',
@@ -92,7 +101,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-10'
   },
   {
-    id: '10',
+    id: '11',
     title: 'Pflegekraft (m/w/d)',
     company: 'PERSO PLANKONTOR Nord GmbH',
     location: 'Edewecht',
@@ -101,7 +110,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-06'
   },
   {
-    id: '11',
+    id: '12',
     title: 'Pflegekraft (m/w/d)',
     company: 'Pflegestation Pollex GmbH Hauskrankenpflege',
     location: 'Berlin',
@@ -110,7 +119,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-05'
   },
   {
-    id: '12',
+    id: '13',
     title: 'Pflegekraft (m/w/d)',
     company: 'Diaverum Deutschland GmbH',
     location: 'Hamburg',
@@ -119,7 +128,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-03'
   },
   {
-    id: '13',
+    id: '14',
     title: 'Pflegekraft (m/w/d)',
     company: 'Diako Thüringen gem. GmbH',
     location: 'Jena',
@@ -128,7 +137,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-01-29'
   },
   {
-    id: '14',
+    id: '15',
     title: 'Pflegekraft (m/w/d)',
     company: 'Johanniter-Unfall-Hilfe e.V. Landesverband Sachsen-Anhalt-Thüringen',
     location: 'Heldburg',
@@ -137,7 +146,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-01-28'
   },
   {
-    id: '15',
+    id: '16',
     title: 'Pflegekraft (m/w/d)',
     company: 'Johanniter-Unfall-Hilfe e.V. Landesverband NRW Landesgeschäftsstelle',
     location: 'Dortmund',
@@ -146,7 +155,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2025-12-19'
   },
   {
-    id: '16',
+    id: '17',
     title: 'Pflegekraft (m/w/d)',
     company: 'AWO pflegeplus gGmbH',
     location: 'Butzbach',
@@ -155,7 +164,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2025-12-17'
   },
   {
-    id: '17',
+    id: '18',
     title: 'Pflegekraft (m/w/d)',
     company: 'LH Betreuungs- u. Pflege GmbH',
     location: 'Kurort Oybin',
@@ -164,7 +173,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2025-11-27'
   },
   {
-    id: '18',
+    id: '19',
     title: 'Pflegekraft (m/w/d)',
     company: 'Johanniter-Unfall-Hilfe e.V. Landesverband Sachsen-Anhalt-Thüringen',
     location: 'Hildburghausen',
@@ -173,7 +182,16 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2025-11-26'
   },
   {
-    id: '19',
+    id: '20',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'Vivantes Netzwerk für Gesundheit GmbH',
+    location: 'Berlin',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2025-11-25'
+  },
+  {
+    id: '21',
     title: 'Pflegekraft (m/w/d)',
     company: 'DRK Kreisverband Parchim e.V.',
     location: 'Lübz',
@@ -182,7 +200,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2025-11-20'
   },
   {
-    id: '20',
+    id: '22',
     title: 'Pflegekraft (m/w/d)',
     company: 'Diako Thüringen gem. GmbH',
     location: 'Kahla, Thüringen',
@@ -191,7 +209,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2025-11-17'
   },
   {
-    id: '21',
+    id: '23',
     title: 'Pflegekraft (m/w/d)',
     company: 'K&S Dr. Krantz Sozialbau und Betreuung SE & Co. KG SR Marktredwitz',
     location: 'Marktredwitz',
@@ -200,7 +218,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2025-10-02'
   },
   {
-    id: '22',
+    id: '24',
     title: 'Pflegekraft (m/w/d)',
     company: 'Diako Thüringen gem. GmbH',
     location: 'Bad Salzungen',
@@ -209,31 +227,13 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2025-08-28'
   },
   {
-    id: '23',
+    id: '25',
     title: 'PFLEGEKRAFT (M/W/D)',
     company: 'Evang. Diakonissenhaus Berlin Teltow Lehnin Stiftung bürgerlichen Rechts',
     location: 'Teltow',
     type: 'Vollzeit',
     description: 'PFLEGEKRAFT (M/W/D)',
     postedAt: '2025-07-15'
-  },
-  {
-    id: '24',
-    title: 'Pflegekraft (m/w/d)',
-    company: 'RASANT Personal-Leasing GmbH',
-    location: 'Bremen',
-    type: 'Vollzeit',
-    description: 'Pflegekraft (m/w/d)',
-    postedAt: '2025-06-24'
-  },
-  {
-    id: '25',
-    title: 'Pflegekraft (m/w/d)',
-    company: 'Augusta-Viktoria-Stift',
-    location: 'Erfurt',
-    type: 'Vollzeit',
-    description: 'Pflegekraft (m/w/d)',
-    postedAt: '2025-02-19'
   }
 ];
 
