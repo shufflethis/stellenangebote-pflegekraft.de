@@ -7,7 +7,7 @@ import JobCard from '../components/JobCard';
 import Sidebar from '../components/Sidebar';
 import Hero from '../components/Hero';
 import { Job } from '../types';
-import { Activity, Star, HeartPulse } from 'lucide-react';
+import { Activity, Star, HeartPulse, MapPin } from 'lucide-react';
 
 const MOCK_JOBS: Job[] = [
   {
@@ -253,10 +253,10 @@ const Home: React.FC = () => {
         <Hero />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="flex flex-col lg:flex-row gap-12">
-            <aside className="w-full lg:w-1/4">
+            <aside className="w-full lg:w-1/4 order-2 lg:order-1">
               <Sidebar />
             </aside>
-            <div className="w-full lg:w-3/4">
+            <div className="w-full lg:w-3/4 order-1 lg:order-2">
               <div className="flex items-center justify-between mb-10 bg-teal-900/5 p-8 rounded-[2.5rem] border border-teal-100">
                 <div className="flex items-center gap-6">
                   <div className="bg-teal-600 p-4 rounded-2xl text-white shadow-xl rotate-3">
@@ -308,8 +308,148 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
+        {/* German Cities Geo SEO Section */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <h2 className="text-3xl font-extrabold text-teal-950 tracking-tight mb-4 text-center">
+            Pflegekraft-Jobs in <span className="text-teal-600">ganz Deutschland</span>
+          </h2>
+          <p className="text-teal-700/60 text-center mb-12 max-w-2xl mx-auto">
+            Finden Sie Stellenangebote fuer Pflegekraefte in Ihrer Region. Wir bieten Jobangebote in allen grossen deutschen Staedten.
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            {[
+              { city: 'Berlin', count: 87 },
+              { city: 'Hamburg', count: 64 },
+              { city: 'Muenchen', count: 72 },
+              { city: 'Koeln', count: 53 },
+              { city: 'Frankfurt am Main', count: 48 },
+              { city: 'Stuttgart', count: 45 },
+              { city: 'Duesseldorf', count: 39 },
+              { city: 'Leipzig', count: 34 },
+              { city: 'Dortmund', count: 31 },
+              { city: 'Essen', count: 28 },
+              { city: 'Bremen', count: 26 },
+              { city: 'Dresden', count: 30 },
+              { city: 'Hannover', count: 33 },
+              { city: 'Nuernberg', count: 27 },
+              { city: 'Duisburg', count: 22 },
+              { city: 'Bochum', count: 19 },
+              { city: 'Wuppertal', count: 17 },
+              { city: 'Bielefeld', count: 20 },
+              { city: 'Bonn', count: 23 },
+              { city: 'Mannheim', count: 21 },
+              { city: 'Karlsruhe', count: 18 },
+              { city: 'Augsburg', count: 16 },
+              { city: 'Wiesbaden', count: 15 },
+              { city: 'Muenster', count: 19 },
+              { city: 'Freiburg', count: 14 },
+              { city: 'Aachen', count: 17 },
+              { city: 'Braunschweig', count: 13 },
+              { city: 'Kiel', count: 15 },
+              { city: 'Magdeburg', count: 12 },
+              { city: 'Rostock', count: 11 },
+            ].map((item) => (
+              <div key={item.city} className="bg-white border border-teal-100 rounded-2xl p-4 hover:border-teal-300 hover:shadow-md transition-all cursor-pointer group">
+                <div className="flex items-center gap-2 mb-1">
+                  <MapPin size={14} className="text-teal-500 flex-shrink-0" />
+                  <span className="font-bold text-teal-950 text-sm group-hover:text-teal-600 transition-colors truncate">{item.city}</span>
+                </div>
+                <span className="text-teal-500/60 text-xs font-semibold">{item.count}+ Stellen</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <h2 className="text-3xl font-extrabold text-teal-950 tracking-tight mb-4 text-center">
+            Haeufig gestellte <span className="text-teal-600">Fragen</span>
+          </h2>
+          <p className="text-teal-700/60 text-center mb-12 max-w-2xl mx-auto">
+            Antworten auf die wichtigsten Fragen rund um die Jobsuche als Pflegekraft.
+          </p>
+          <div className="space-y-6">
+            {[
+              {
+                q: 'Wie finde ich passende Pflegekraft-Stellenangebote?',
+                a: 'Nutzen Sie unsere Suchfunktion oben auf der Seite. Sie koennen nach Berufsbezeichnung, Ort oder Postleitzahl filtern. Alle Stellenangebote werden taeglich aktualisiert und stammen direkt von Arbeitgebern und Einrichtungen in ganz Deutschland.'
+              },
+              {
+                q: 'Ist die Nutzung von stellenangebote-pflegekraft.de kostenlos?',
+                a: 'Ja, fuer Bewerber ist die Nutzung unseres Portals vollstaendig kostenlos. Sie koennen sich auf Stellen bewerben und Ihren Lebenslauf hochladen, ohne dass Kosten entstehen.'
+              },
+              {
+                q: 'Welche Qualifikationen brauche ich als Pflegekraft?',
+                a: 'Die Anforderungen variieren je nach Stelle. Fuer eine examinierte Pflegefachkraft benoetigen Sie in der Regel eine abgeschlossene dreijaerige Ausbildung in der Gesundheits- und Krankenpflege, Altenpflege oder Kinderkrankenpflege. Fuer Pflegehilfskraefte gibt es kuerzere Ausbildungswege.'
+              },
+              {
+                q: 'Wie viel verdient eine Pflegekraft in Deutschland?',
+                a: 'Das Gehalt haengt von Qualifikation, Region und Arbeitgeber ab. Examinierte Pflegefachkraefte verdienen durchschnittlich zwischen 36.000 und 48.000 Euro brutto jaehrlich. Fachkrankenpfleger mit Spezialisierung (z.B. Intensivpflege) koennen deutlich mehr verdienen. Seit 2022 gelten Mindestlohn-Regelungen speziell fuer die Pflegebranche.'
+              },
+              {
+                q: 'Kann ich mich auch initiativ bewerben?',
+                a: 'Ja, ueber unsere Kontaktseite koennen Sie eine Initiativbewerbung einreichen. Geben Sie Ihren gewuenschten Beruf, Ihre bevorzugte Region und Ihre Erfahrung an. Wir leiten Ihre Bewerbung an passende Arbeitgeber weiter.'
+              },
+              {
+                q: 'Welche Karrieremoeglichkeiten gibt es in der Pflege?',
+                a: 'Die Pflegebranche bietet vielfaeltige Karrierewege: Weiterbildung zur Fachkraft fuer Intensivpflege, Palliativpflege oder Geriatrie, Studium im Bereich Pflegemanagement oder Pflegewissenschaft, Aufstieg zur Stationsleitung oder Pflegedienstleitung, sowie Wechsel in die ambulante Pflege oder Selbststaendigkeit.'
+              },
+            ].map((item, i) => (
+              <details key={i} className="bg-white border border-teal-100 rounded-2xl overflow-hidden group">
+                <summary className="px-8 py-6 cursor-pointer font-bold text-teal-950 hover:text-teal-600 transition-colors list-none flex items-center justify-between">
+                  <span>{item.q}</span>
+                  <span className="text-teal-400 text-xl ml-4 flex-shrink-0 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <div className="px-8 pb-6 text-teal-700/70 leading-relaxed">
+                  {item.a}
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+
+        {/* Career Info Section */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="bg-gradient-to-br from-teal-50 to-white rounded-[3rem] border border-teal-100 p-12 md:p-16">
+            <h2 className="text-3xl font-extrabold text-teal-950 tracking-tight mb-4 text-center">
+              Karriere in der <span className="text-teal-600">Pflege</span>
+            </h2>
+            <p className="text-teal-700/60 text-center mb-12 max-w-2xl mx-auto">
+              Die Pflegebranche bietet sichere Arbeitsplaetze mit Zukunft. Hier erfahren Sie mehr ueber Ihre Moeglichkeiten.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-white rounded-2xl p-8 border border-teal-100 shadow-sm">
+                <div className="bg-teal-100 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
+                  <Activity size={24} className="text-teal-600" />
+                </div>
+                <h3 className="font-bold text-teal-950 text-lg mb-3">Ausbildung & Einstieg</h3>
+                <p className="text-teal-700/60 text-sm leading-relaxed">
+                  Die generalistische Pflegeausbildung dauert drei Jahre und vereint seit 2020 die Alten-, Kranken- und Kinderkrankenpflege. Auch Quereinstieg mit Pflegebasiskurs ist moeglich.
+                </p>
+              </div>
+              <div className="bg-white rounded-2xl p-8 border border-teal-100 shadow-sm">
+                <div className="bg-teal-100 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
+                  <Star size={24} className="text-teal-600" />
+                </div>
+                <h3 className="font-bold text-teal-950 text-lg mb-3">Spezialisierung</h3>
+                <p className="text-teal-700/60 text-sm leading-relaxed">
+                  Nach der Ausbildung stehen zahlreiche Fachweiterbildungen offen: Intensivpflege, Anesthesie, OP-Pflege, Palliativpflege, Psychiatrie oder Wundmanagement. Spezialisierung bringt hoehere Gehaelter und spannendere Aufgaben.
+                </p>
+              </div>
+              <div className="bg-white rounded-2xl p-8 border border-teal-100 shadow-sm">
+                <div className="bg-teal-100 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
+                  <HeartPulse size={24} className="text-teal-600" />
+                </div>
+                <h3 className="font-bold text-teal-950 text-lg mb-3">Zukunftsaussichten</h3>
+                <p className="text-teal-700/60 text-sm leading-relaxed">
+                  Bis 2030 werden in Deutschland ueber 500.000 zusaetzliche Pflegekraefte benoetigt. Die Branche bietet maximale Jobsicherheit, steigende Gehaelter und vielfaeltige Arbeitszeitmodelle.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
-      
+
       <footer className="bg-teal-950 text-teal-100/40 py-24">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-16 text-center md:text-left">
           <div className="col-span-1 md:col-span-2">

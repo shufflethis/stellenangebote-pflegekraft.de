@@ -1,19 +1,38 @@
 # HR-UPDATER: v1.0
 # stellenangebote-pflegekraft.de - Pflegekraft Stellenangebote
 
-> stellenangebote-pflegekraft.de ist ein spezialisiertes Jobportal fuer Pflegekraft-Stellenangebote in Deutschland, Oesterreich und der Schweiz.
+> stellenangebote-pflegekraft.de ist ein spezialisiertes Jobportal fuer Pflegekraft-Stellenangebote in Deutschland, Oesterreich und der Schweiz. Betrieben von Social Media Venture GmbH.
 
 ## Ueber uns
 - Spezialisiertes Jobportal fuer Pflegekraft
 - Kostenlose Stellensuche fuer Bewerber
 - Gezielte Reichweite fuer Arbeitgeber
+- Taeglich aktualisierte Stellenangebote aus der gesamten DACH-Region
+
+## Betreiber
+- Firma: Social Media Venture GmbH
+- Geschaeftsfuehrer: Thomas Sander
+- Adresse: Schliemannstrasse 23, 10437 Berlin, Deutschland
+- Telefon: +49 30 959 988 700
+- E-Mail: info@socialmediaventure.com
+- LinkedIn: https://de.linkedin.com/in/thomas-sander-520676303
 
 ## Kontakt
 - Website: https://stellenangebote-pflegekraft.de
-- Arbeitgeber-Kontakt: https://stellenangebote-pflegekraft.de/kontakt-arbeitgeber
-- Bewerber-Kontakt: https://stellenangebote-pflegekraft.de/kontakt-bewerber
+- Kontaktseite: https://stellenangebote-pflegekraft.de/#/kontakt
+- Impressum: https://stellenangebote-pflegekraft.de/#/impressum
+- Datenschutz: https://stellenangebote-pflegekraft.de/#/datenschutz
 
 ## Inhalte
-- Aktuelle Pflegekraft-Stellenangebote
+- Aktuelle Pflegekraft-Stellenangebote in ganz Deutschland
 - Karriere-Ratgeber fuer Pflegekraft
 - Gehaltsvergleiche und Brancheninformationen
+- FAQ fuer Bewerber und Arbeitgeber
+- Regionale Stellenangebote in allen deutschen Grossstaedten (Berlin, Hamburg, Muenchen, Koeln, Frankfurt, Stuttgart, u.v.m.)
+
+## Seiten
+- Startseite (Jobsuche): https://stellenangebote-pflegekraft.de/
+- Kontakt: https://stellenangebote-pflegekraft.de/#/kontakt
+- Impressum: https://stellenangebote-pflegekraft.de/#/impressum
+- Datenschutz: https://stellenangebote-pflegekraft.de/#/datenschutz
+- Autor: https://stellenangebote-pflegekraft.de/#/autor/thomas-sander
