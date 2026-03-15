@@ -12,6 +12,105 @@ import { Activity, Star, HeartPulse, MapPin } from 'lucide-react';
 const MOCK_JOBS: Job[] = [
   {
     id: '1',
+    title: 'Einrichter (m/w/d) für Kunststoffspritzgussmaschinen',
+    company: 'Medisca GmbH',
+    location: 'Kabelsketal',
+    type: 'Vollzeit',
+    description: 'Einrichter (m/w/d) für Kunststoffspritzgussmaschinen',
+    postedAt: '2026-03-15'
+  },
+  {
+    id: '2',
+    title: 'Zahnarzt (m/w/d)',
+    company: 'MeinDentist Berlin GmbH',
+    location: 'Potsdam',
+    type: 'Vollzeit',
+    description: 'Zahnarzt (m/w/d)',
+    postedAt: '2026-03-15'
+  },
+  {
+    id: '3',
+    title: 'Zahnarzt (m/w/d)',
+    company: 'MeinDentist Berlin GmbH',
+    location: 'Berlin',
+    type: 'Vollzeit',
+    description: 'Zahnarzt (m/w/d)',
+    postedAt: '2026-03-15'
+  },
+  {
+    id: '4',
+    title: 'Mitarbeiter (m/w/d) Finanzbuchhaltung & Digitale Prozesse',
+    company: 'avs SYSTEM LIFT AGSofort-Bewerbung',
+    location: 'Hannover',
+    type: 'Vollzeit',
+    description: 'Mitarbeiter (m/w/d) Finanzbuchhaltung & Digitale Prozesse',
+    postedAt: '2026-03-15'
+  },
+  {
+    id: '5',
+    title: 'Mitarbeiter (m/w/d) Finanzbuchhaltung & Digitale Prozesse',
+    company: 'avs SYSTEM LIFT AGSofort-Bewerbung',
+    location: 'Isernhagen',
+    type: 'Vollzeit',
+    description: 'Mitarbeiter (m/w/d) Finanzbuchhaltung & Digitale Prozesse',
+    postedAt: '2026-03-15'
+  },
+  {
+    id: '6',
+    title: 'Haustechniker/in (m/w/d) für Bestandsimmobilien mit großer Dienstwohnung',
+    company: 'Neuerburg GrundstücksgemeinschaftSofort-Bewerbung',
+    location: 'Köln',
+    type: 'Vollzeit',
+    description: 'Haustechniker/in (m/w/d) für Bestandsimmobilien mit großer Dienstwohnung',
+    postedAt: '2026-03-15'
+  },
+  {
+    id: '7',
+    title: 'Pflegekraft',
+    company: 'Haus Ingrid Tagespflege und Pflegeeinrichtung für Senioren Berlin-Heinersdorf GmbH',
+    location: 'Berlin',
+    type: 'Vollzeit',
+    description: 'Pflegekraft',
+    postedAt: '2026-03-12'
+  },
+  {
+    id: '8',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'Diako Thüringen gem. GmbH',
+    location: 'Weilar',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2026-03-10'
+  },
+  {
+    id: '9',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'AWO Seniorendienste Südhessen gGmbH',
+    location: 'Darmstadt',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2026-03-09'
+  },
+  {
+    id: '10',
+    title: 'Pflegekraft',
+    company: 'Schwester Annettes Pflegedienst GmbH',
+    location: 'Schimberg',
+    type: 'Vollzeit',
+    description: 'Pflegekraft',
+    postedAt: '2026-03-09'
+  },
+  {
+    id: '11',
+    title: 'Pflegekraft (m/w/d)',
+    company: 'AWO-Sozialmanagement Saale-Orla-Kreis gGmbH',
+    location: 'Neustadt an der Orla',
+    type: 'Vollzeit',
+    description: 'Pflegekraft (m/w/d)',
+    postedAt: '2026-03-06'
+  },
+  {
+    id: '12',
     title: 'Pflegefachkraft (m/w/d)',
     company: 'DRK-Region Hannover e.V.',
     location: 'Hemmingen, Han',
@@ -20,7 +119,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-06'
   },
   {
-    id: '2',
+    id: '13',
     title: 'Pflegekraft (m/w/d)',
     company: 'Alten- und Pflegeheim Schierholz GmbH',
     location: 'Treia bei Schleswig',
@@ -29,7 +128,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-27'
   },
   {
-    id: '3',
+    id: '14',
     title: 'Pflegekraft (m/w/d)',
     company: 'AAQUILA Personalservice GmbH',
     location: 'Freyung, Niederbayern',
@@ -38,7 +137,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-26'
   },
   {
-    id: '4',
+    id: '15',
     title: 'Pflegekraft (w/m/d)',
     company: 'SAH Leipzig gGmbH',
     location: 'Leipzig',
@@ -47,7 +146,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-26'
   },
   {
-    id: '5',
+    id: '16',
     title: 'Pflegekraft (m/w/d)',
     company: 'Johanniter-Unfall-Hilfe e.V. Landesverband Sachsen-Anhalt-Thüringen',
     location: 'Bad Blankenburg',
@@ -56,7 +155,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-25'
   },
   {
-    id: '6',
+    id: '17',
     title: 'Pflegekraft (m/w/d)',
     company: 'Johanniter-Unfall-Hilfe e.V. Landesverband Sachsen-Anhalt-Thüringen',
     location: 'Königsee',
@@ -65,7 +164,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-25'
   },
   {
-    id: '7',
+    id: '18',
     title: 'Pflegekraft (m/w/d)',
     company: 'Diakonisches Werk Schweinfurt e.V. Verwaltung',
     location: 'Maßbach',
@@ -74,7 +173,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-24'
   },
   {
-    id: '8',
+    id: '19',
     title: 'Pflegekraft (m/w/d)',
     company: 'Actief Personalmanagement GmbH Gera',
     location: 'Triptis',
@@ -83,7 +182,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-24'
   },
   {
-    id: '9',
+    id: '20',
     title: 'Pflegekraft (m/w/d)',
     company: 'AWO Soziale Dienste Vogtland gemeinnützige GmbH',
     location: 'Plauen, Vogtland',
@@ -92,7 +191,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-20'
   },
   {
-    id: '10',
+    id: '21',
     title: 'Pflegekraft (w/m/d)',
     company: 'AWO Bezirksverband BB Süd e.V.',
     location: 'Calau',
@@ -101,7 +200,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-10'
   },
   {
-    id: '11',
+    id: '22',
     title: 'Pflegekraft (m/w/d)',
     company: 'PERSO PLANKONTOR Nord GmbH',
     location: 'Edewecht',
@@ -110,7 +209,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-06'
   },
   {
-    id: '12',
+    id: '23',
     title: 'Pflegekraft (m/w/d)',
     company: 'Pflegestation Pollex GmbH Hauskrankenpflege',
     location: 'Berlin',
@@ -119,7 +218,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-05'
   },
   {
-    id: '13',
+    id: '24',
     title: 'Pflegekraft (m/w/d)',
     company: 'Diaverum Deutschland GmbH',
     location: 'Hamburg',
@@ -128,112 +227,13 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-03'
   },
   {
-    id: '14',
+    id: '25',
     title: 'Pflegekraft (m/w/d)',
     company: 'Diako Thüringen gem. GmbH',
     location: 'Jena',
     type: 'Vollzeit',
     description: 'Pflegekraft (m/w/d)',
     postedAt: '2026-01-29'
-  },
-  {
-    id: '15',
-    title: 'Pflegekraft (m/w/d)',
-    company: 'Johanniter-Unfall-Hilfe e.V. Landesverband Sachsen-Anhalt-Thüringen',
-    location: 'Heldburg',
-    type: 'Vollzeit',
-    description: 'Pflegekraft (m/w/d)',
-    postedAt: '2026-01-28'
-  },
-  {
-    id: '16',
-    title: 'Pflegekraft (m/w/d)',
-    company: 'Johanniter-Unfall-Hilfe e.V. Landesverband NRW Landesgeschäftsstelle',
-    location: 'Dortmund',
-    type: 'Vollzeit',
-    description: 'Pflegekraft (m/w/d)',
-    postedAt: '2025-12-19'
-  },
-  {
-    id: '17',
-    title: 'Pflegekraft (m/w/d)',
-    company: 'AWO pflegeplus gGmbH',
-    location: 'Butzbach',
-    type: 'Vollzeit',
-    description: 'Pflegekraft (m/w/d)',
-    postedAt: '2025-12-17'
-  },
-  {
-    id: '18',
-    title: 'Pflegekraft (m/w/d)',
-    company: 'LH Betreuungs- u. Pflege GmbH',
-    location: 'Kurort Oybin',
-    type: 'Vollzeit',
-    description: 'Pflegekraft (m/w/d)',
-    postedAt: '2025-11-27'
-  },
-  {
-    id: '19',
-    title: 'Pflegekraft (m/w/d)',
-    company: 'Johanniter-Unfall-Hilfe e.V. Landesverband Sachsen-Anhalt-Thüringen',
-    location: 'Hildburghausen',
-    type: 'Vollzeit',
-    description: 'Pflegekraft (m/w/d)',
-    postedAt: '2025-11-26'
-  },
-  {
-    id: '20',
-    title: 'Pflegekraft (m/w/d)',
-    company: 'Vivantes Netzwerk für Gesundheit GmbH',
-    location: 'Berlin',
-    type: 'Vollzeit',
-    description: 'Pflegekraft (m/w/d)',
-    postedAt: '2025-11-25'
-  },
-  {
-    id: '21',
-    title: 'Pflegekraft (m/w/d)',
-    company: 'DRK Kreisverband Parchim e.V.',
-    location: 'Lübz',
-    type: 'Vollzeit',
-    description: 'Pflegekraft (m/w/d)',
-    postedAt: '2025-11-20'
-  },
-  {
-    id: '22',
-    title: 'Pflegekraft (m/w/d)',
-    company: 'Diako Thüringen gem. GmbH',
-    location: 'Kahla, Thüringen',
-    type: 'Vollzeit',
-    description: 'Pflegekraft (m/w/d)',
-    postedAt: '2025-11-17'
-  },
-  {
-    id: '23',
-    title: 'Pflegekraft (m/w/d)',
-    company: 'K&S Dr. Krantz Sozialbau und Betreuung SE & Co. KG SR Marktredwitz',
-    location: 'Marktredwitz',
-    type: 'Vollzeit',
-    description: 'Pflegekraft (m/w/d)',
-    postedAt: '2025-10-02'
-  },
-  {
-    id: '24',
-    title: 'Pflegekraft (m/w/d)',
-    company: 'Diako Thüringen gem. GmbH',
-    location: 'Bad Salzungen',
-    type: 'Vollzeit',
-    description: 'Pflegekraft (m/w/d)',
-    postedAt: '2025-08-28'
-  },
-  {
-    id: '25',
-    title: 'PFLEGEKRAFT (M/W/D)',
-    company: 'Evang. Diakonissenhaus Berlin Teltow Lehnin Stiftung bürgerlichen Rechts',
-    location: 'Teltow',
-    type: 'Vollzeit',
-    description: 'PFLEGEKRAFT (M/W/D)',
-    postedAt: '2025-07-15'
   }
 ];
 
